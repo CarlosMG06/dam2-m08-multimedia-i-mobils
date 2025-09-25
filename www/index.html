@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>pàgina d'exemple AMS2</title>
+</head>
+<style>
+    #nom {
+        background-color: orange;
+    }
+</style>
+<body>
+
+    <h1>El meu nom</h1>
+    <p>El meu nom és:<span id="nom">XXx</span></p>
+    <p>Nom: <input id="nameInput" /></p>
+    <p><button onclick="canvia_nom()">Canvia nom</button></p>
+
+    <script>
+        function canvia_nom() {
+            var elem = document.getElementById("nameInput");
+            document.getElementById("nom").innerHTML = elem.value;
+
+            setInterval(desplaça,10);
+        }
+
+        var x = 0;
+        function desplaça() {
+            x++;
+            // modifica margin-left
+               document.getElementById("nom").style = "margin-left:"+x+"px";
+        }
+    </script>
+
+</body>
+</html>
