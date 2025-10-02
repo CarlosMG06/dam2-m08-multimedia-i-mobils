@@ -3,35 +3,124 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>pàgina d'exemple AMS2</title>
+    <title>login AMS2</title>
 </head>
 <style>
-    #nom {
-        background-color: orange;
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+    }
+    hr {
+        margin: 20px 0;
+    }
+    label {
+        display: inline-block;
+        width: 150px;
+    }
+    input {
+        width: 200px;
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: #c6c6c6;
     }
 </style>
 <body>
-
-    <h1>El meu nom</h1>
-    <p>El meu nom és:<span id="nom">XXx</span></p>
-    <p>Nom: <input id="nameInput" /></p>
-    <p><button onclick="canvia_nom()">Canvia nom</button></p>
-
+    <h1>Register</h1>
+    <form action="">
+        <label for="email">Correu electrònic:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+        <label for="username">Nom d'usuari:</label>
+        <input type="text" id="registerUsername" name="username" required>
+        <br><br>
+        <label for="password">Contrasenya:</label>
+        <input type="password" id="registerPassword" name="password" required>
+        <br><br>
+        <label for="confirmpassword">Confirmar contrasenya:</label>
+        <input type="password" id="confirmpassword" name="confirmpassword" required>
+        <br><br>
+        <button onclick="register()">Envia</button>
+    </form>
+    <hr>
+    <h1>Login</h1>
+    <form action="">
+        <label for="username">Nom d'usuari:</label>
+        <input type="text" id="loginUsername" name="username" required>
+        <br><br>
+        <label for="password">Contrasenya:</label>
+        <input type="password" id="loginPassword" name="password" required>
+        <br><br>
+        <button onclick="login()">Envia</button>
+    </form>
     <script>
-        function canvia_nom() {
-            var elem = document.getElementById("nameInput");
-            document.getElementById("nom").innerHTML = elem.value;
+        let userInfo = [
+            {
+            email: "example@gmail.com",
+            username: "exampleUser",
+            password: "3x4mpl3P4ssw0rd"
+            }
+        ];
 
-            setInterval(desplaça,10);
+        function register() {
+            const email = document.getElementById('email').value;
+            const username = document.getElementById('registerUsername').value;
+            const password = document.getElementById('registerPassword').value;
+            const confirmpassword = document.getElementById('confirmpassword').value;
+
+            if (password !== confirmpassword) {
+                alert("Les contrasenyes no coincideixen.");
+                return;
+            }
+
+            const newUser = {
+                email: email,
+                username: username,
+                password: password
+            };
+
+            userInfo.push(newUser);
+            console.log(userInfo);
+            alert("Usuari registrat amb èxit!");
         }
 
-        var x = 0;
-        function desplaça() {
-            x++;
-            // modifica margin-left
-               document.getElementById("nom").style = "margin-left:"+x+"px";
+        function login() {
+            const username = document.getElementById('loginUsername').value;
+            const password = document.getElementById('loginPassword').value;
+
+            let validUsername = false;
+            for (let i = 0; i < userInfo.length; i++) {
+                if (userInfo[i].username === username) {
+                    validUsername = true;
+                    break;
+                }
+            }
+            if (!validUsername) {
+                alert("Nom d'usuari incorrecte.");
+                return;
+            }
+
+            let user = null;
+            for (let i = 0; i < userInfo.length; i++) {
+                if (userInfo[i].username === username && userInfo[i].password === password) {
+                    user = userInfo[i];
+                    break;
+                }
+            }
+            if (user) {
+                alert("Inici de sessió correcte!");
+            } else {
+                alert("Contrasenya incorrecta.");
+            }
         }
     </script>
-
 </body>
 </html>
