@@ -34,80 +34,46 @@
     }
 </style>
 <body>
-    <h1>Register</h1>
-    <form action="">
-        <label for="email">Correu electrònic:</label>
-        <input type="email" id="email" name="email" required>
-        <br><br>
-        <label for="username">Nom d'usuari:</label>
-        <input type="text" id="registerUsername" name="username" required>
-        <br><br>
-        <label for="password">Contrasenya:</label>
-        <input type="password" id="registerPassword" name="password" required>
-        <br><br>
-        <label for="confirmpassword">Confirmar contrasenya:</label>
-        <input type="password" id="confirmpassword" name="confirmpassword" required>
-        <br><br>
-        <button onclick="register()">Envia</button>
-    </form>
-    <hr>
     <h1>Login</h1>
-    <form action="">
-        <label for="username">Nom d'usuari:</label>
-        <input type="text" id="loginUsername" name="username" required>
-        <br><br>
-        <label for="password">Contrasenya:</label>
-        <input type="password" id="loginPassword" name="password" required>
-        <br><br>
-        <button onclick="login()">Envia</button>
-    </form>
+    <label>Nom d'usuari:</label>
+    <input type="text" id="usuari" required>
+    <br><br>
+    <label>Contrasenya:</label>
+    <input type="password" id="contrasenya" required>
+    <br><br>
+    <button onclick="fer_login()">Login</button>
+    <hr>
+    <h1>Register</h1>
+    <label>Correu electrònic:</label>
+    <input type="email" id="reg_email" required>
+    <br><br>
+    <label>Nom d'usuari:</label>
+    <input type="text" id="reg_usuari" required>
+    <br><br>
+    <label>Contrasenya:</label>
+    <input type="password" id="reg_contrasenya_1" required>
+    <br><br>
+    <label>Confirmar contrasenya:</label>
+    <input type="password" id="reg_contrasenya_2" required>
+    <br><br>
+    <button onclick="registra()">Registra</button>
     <script>
         let userInfo = [
             {
             email: "example@gmail.com",
             username: "exampleUser",
             password: "3x4mpl3P4ssw0rd"
+            },
+            {
+            email: "hola@gmail.com",
+            username: "ieti",
+            password: "cordova"
             }
         ];
-
-        function register() {
-            const email = document.getElementById('email').value;
-            const username = document.getElementById('registerUsername').value;
-            const password = document.getElementById('registerPassword').value;
-            const confirmpassword = document.getElementById('confirmpassword').value;
-
-            if (password !== confirmpassword) {
-                alert("Les contrasenyes no coincideixen.");
-                return;
-            }
-
-            const newUser = {
-                email: email,
-                username: username,
-                password: password
-            };
-
-            userInfo.push(newUser);
-            console.log(userInfo);
-            alert("Usuari registrat amb èxit!");
-        }
-
-        function login() {
-            const username = document.getElementById('loginUsername').value;
-            const password = document.getElementById('loginPassword').value;
-
-            let validUsername = false;
-            for (let i = 0; i < userInfo.length; i++) {
-                if (userInfo[i].username === username) {
-                    validUsername = true;
-                    break;
-                }
-            }
-            if (!validUsername) {
-                alert("Nom d'usuari incorrecte.");
-                return;
-            }
-
+        
+        function fer_login() {
+            const username = document.getElementById('usuari').value;
+            const password = document.getElementById('contrasenya').value;
             let user = null;
             for (let i = 0; i < userInfo.length; i++) {
                 if (userInfo[i].username === username && userInfo[i].password === password) {
@@ -116,10 +82,37 @@
                 }
             }
             if (user) {
-                alert("Inici de sessió correcte!");
+                alert("Login exitós");
             } else {
-                alert("Contrasenya incorrecta.");
+                alert("Login incorrecte");
             }
+        }
+        function registra() {
+            const email = document.getElementById('reg_email').value;
+            const username = document.getElementById('reg_usuari').value;
+            const password = document.getElementById('reg_contrasenya_1').value;
+            const confirmpassword = document.getElementById('reg_contrasenya_2').value;
+
+            if (password !== confirmpassword) {
+                alert("Error en les contrasenyes");
+                return;
+            }
+
+            for (let i = 0; i < userInfo.length; i++) {
+                if (userInfo[i].username === username || userInfo[i].email === email) {
+                    alert("El nom o l'email ja existeix a la base de dades");
+                    return;
+                }
+            }
+
+            const newUser = {
+                email: email,
+                username: username,
+                password: password
+            };
+            userInfo.push(newUser);
+            console.log(userInfo);
+            alert("Nou usuari registrat correctament");
         }
     </script>
 </body>
