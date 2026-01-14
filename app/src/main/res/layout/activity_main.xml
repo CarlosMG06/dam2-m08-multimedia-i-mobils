@@ -1,0 +1,726 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/col1"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:text="@string/col1"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/col2"
+                android:layout_width="64dp"
+                android:layout_height="32dp"
+                android:text="@string/col2"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/col3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/col3"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/col4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/col4"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/col5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/col5"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/col6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/col6"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/col7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/col7"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/rowA"
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:text="@string/rowA"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnA1"
+                android:layout_width="64dp"
+                android:layout_height="48dp"
+                android:backgroundTint="@color/water"
+                android:text="@string/water"
+                android:textSize="12sp"
+                app:strokeColor="#000000"
+                app:strokeWidth="3dp" />
+
+            <Button
+                android:id="@+id/btnA2"
+                android:layout_width="64dp"
+                android:layout_height="48dp"
+                android:backgroundTint="@color/water"
+                android:text="@string/water"
+                android:textSize="12sp"
+                app:strokeColor="#000000"
+                app:strokeWidth="3dp" />
+
+            <Button
+                android:id="@+id/btnA3"
+                android:layout_width="64dp"
+                android:layout_height="48dp"
+                android:backgroundTint="@color/water"
+                android:text="@string/water"
+                android:textSize="12sp"
+                app:strokeColor="#000000"
+                app:strokeWidth="3dp" />
+
+            <Button
+                android:id="@+id/btnA4"
+                android:layout_width="64dp"
+                android:layout_height="48dp"
+                android:backgroundTint="@color/water"
+                android:text="@string/water"
+                android:textSize="12sp"
+                app:strokeColor="#000000"
+                app:strokeWidth="3dp" />
+
+            <Button
+                android:id="@+id/btnA5"
+                android:layout_width="64dp"
+                android:layout_height="48dp"
+                android:backgroundTint="@color/water"
+                android:text="@string/water"
+                android:textSize="12sp"
+                app:strokeColor="#000000"
+                app:strokeWidth="3dp" />
+
+            <Button
+                android:id="@+id/btnA6"
+                android:layout_width="64dp"
+                android:layout_height="48dp"
+                android:backgroundTint="@color/water"
+                android:text="@string/water"
+                android:textSize="12sp"
+                app:strokeColor="#000000"
+                app:strokeWidth="3dp" />
+
+            <Button
+                android:id="@+id/btnA7"
+                android:layout_width="64dp"
+                android:layout_height="48dp"
+                android:backgroundTint="@color/water"
+                android:text="@string/water"
+                android:textSize="12sp"
+                app:strokeColor="#000000"
+                app:strokeWidth="3dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/rowB"
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:text="@string/rowB"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnB1"
+                android:layout_width="64dp"
+                android:layout_height="48dp"
+                android:backgroundTint="@color/water"
+                android:text="@string/water"
+                android:textSize="12sp"
+                app:strokeColor="#000000"
+                app:strokeWidth="3dp" />
+
+            <Button
+                android:id="@+id/btnB2"
+                android:layout_width="64dp"
+                android:layout_height="48dp"
+                android:backgroundTint="@color/water"
+                android:text="@string/water"
+                android:textSize="12sp"
+                app:strokeColor="#000000"
+                app:strokeWidth="3dp" />
+
+            <Button
+                android:id="@+id/btnB3"
+                android:layout_width="64dp"
+                android:layout_height="48dp"
+                android:backgroundTint="@color/water"
+                android:text="@string/water"
+                android:textSize="12sp"
+                app:strokeColor="#000000"
+                app:strokeWidth="3dp" />
+
+            <Button
+                android:id="@+id/btnB4"
+                android:layout_width="64dp"
+                android:layout_height="48dp"
+                android:backgroundTint="@color/water"
+                android:text="@string/water"
+                android:textSize="12sp"
+                app:strokeColor="#000000"
+                app:strokeWidth="3dp" />
+
+            <Button
+                android:id="@+id/btnB5"
+                android:layout_width="64dp"
+                android:layout_height="48dp"
+                android:backgroundTint="@color/water"
+                android:text="@string/water"
+                android:textSize="12sp"
+                app:strokeColor="#000000"
+                app:strokeWidth="3dp" />
+
+            <Button
+                android:id="@+id/btnB6"
+                android:layout_width="64dp"
+                android:layout_height="48dp"
+                android:backgroundTint="@color/water"
+                android:text="@string/water"
+                android:textSize="12sp"
+                app:strokeColor="#000000"
+                app:strokeWidth="3dp" />
+
+            <Button
+                android:id="@+id/btnB7"
+                android:layout_width="64dp"
+                android:layout_height="48dp"
+                android:backgroundTint="@color/water"
+                android:text="@string/water"
+                android:textSize="12sp"
+                app:strokeColor="#000000"
+                app:strokeWidth="3dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/rowC"
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:text="@string/rowC"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnC1"
+                android:layout_width="64dp"
+                android:layout_height="48dp"
+                android:backgroundTint="@color/water"
+                android:text="@string/water"
+                android:textSize="12sp"
+                app:strokeColor="#000000"
+                app:strokeWidth="3dp" />
+
+            <Button
+                android:id="@+id/btnC2"
+                android:layout_width="64dp"
+                android:layout_height="48dp"
+                android:backgroundTint="@color/water"
+                android:text="@string/water"
+                android:textSize="12sp"
+                app:strokeColor="#000000"
+                app:strokeWidth="3dp" />
+
+            <Button
+                android:id="@+id/btnC3"
+                android:layout_width="64dp"
+                android:layout_height="48dp"
+                android:backgroundTint="@color/water"
+                android:text="@string/water"
+                android:textSize="12sp"
+                app:strokeColor="#000000"
+                app:strokeWidth="3dp" />
+
+            <Button
+                android:id="@+id/btnC4"
+                android:layout_width="64dp"
+                android:layout_height="48dp"
+                android:backgroundTint="@color/water"
+                android:text="@string/water"
+                android:textSize="12sp"
+                app:strokeColor="#000000"
+                app:strokeWidth="3dp" />
+
+            <Button
+                android:id="@+id/btnC5"
+                android:layout_width="64dp"
+                android:layout_height="48dp"
+                android:backgroundTint="@color/water"
+                android:text="@string/water"
+                android:textSize="12sp"
+                app:strokeColor="#000000"
+                app:strokeWidth="3dp" />
+
+            <Button
+                android:id="@+id/btnC6"
+                android:layout_width="64dp"
+                android:layout_height="48dp"
+                android:backgroundTint="@color/water"
+                android:text="@string/water"
+                android:textSize="12sp"
+                app:strokeColor="#000000"
+                app:strokeWidth="3dp" />
+
+            <Button
+                android:id="@+id/btnC7"
+                android:layout_width="64dp"
+                android:layout_height="48dp"
+                android:backgroundTint="@color/water"
+                android:text="@string/water"
+                android:textSize="12sp"
+                app:strokeColor="#000000"
+                app:strokeWidth="3dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/rowD"
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:text="@string/rowD"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnD1"
+                android:layout_width="64dp"
+                android:layout_height="48dp"
+                android:backgroundTint="@color/water"
+                android:text="@string/water"
+                android:textSize="12sp"
+                app:strokeColor="#000000"
+                app:strokeWidth="3dp" />
+
+            <Button
+                android:id="@+id/btnD2"
+                android:layout_width="64dp"
+                android:layout_height="48dp"
+                android:backgroundTint="@color/water"
+                android:text="@string/water"
+                android:textSize="12sp"
+                app:strokeColor="#000000"
+                app:strokeWidth="3dp" />
+
+            <Button
+                android:id="@+id/btnD3"
+                android:layout_width="64dp"
+                android:layout_height="48dp"
+                android:backgroundTint="@color/water"
+                android:text="@string/water"
+                android:textSize="12sp"
+                app:strokeColor="#000000"
+                app:strokeWidth="3dp" />
+
+            <Button
+                android:id="@+id/btnD4"
+                android:layout_width="64dp"
+                android:layout_height="48dp"
+                android:backgroundTint="@color/water"
+                android:text="@string/water"
+                android:textSize="12sp"
+                app:strokeColor="#000000"
+                app:strokeWidth="3dp" />
+
+            <Button
+                android:id="@+id/btnD5"
+                android:layout_width="64dp"
+                android:layout_height="48dp"
+                android:backgroundTint="@color/water"
+                android:text="@string/water"
+                android:textSize="12sp"
+                app:strokeColor="#000000"
+                app:strokeWidth="3dp" />
+
+            <Button
+                android:id="@+id/btnD6"
+                android:layout_width="64dp"
+                android:layout_height="48dp"
+                android:backgroundTint="@color/water"
+                android:text="@string/water"
+                android:textSize="12sp"
+                app:strokeColor="#000000"
+                app:strokeWidth="3dp" />
+
+            <Button
+                android:id="@+id/btnD7"
+                android:layout_width="64dp"
+                android:layout_height="48dp"
+                android:backgroundTint="@color/water"
+                android:text="@string/water"
+                android:textSize="12sp"
+                app:strokeColor="#000000"
+                app:strokeWidth="3dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/rowE"
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:text="@string/rowE"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnE1"
+                android:layout_width="64dp"
+                android:layout_height="48dp"
+                android:backgroundTint="@color/water"
+                android:text="@string/water"
+                android:textSize="12sp"
+                app:strokeColor="#000000"
+                app:strokeWidth="3dp" />
+
+            <Button
+                android:id="@+id/btnE2"
+                android:layout_width="64dp"
+                android:layout_height="48dp"
+                android:backgroundTint="@color/water"
+                android:text="@string/water"
+                android:textSize="12sp"
+                app:strokeColor="#000000"
+                app:strokeWidth="3dp" />
+
+            <Button
+                android:id="@+id/btnE3"
+                android:layout_width="64dp"
+                android:layout_height="48dp"
+                android:backgroundTint="@color/water"
+                android:text="@string/water"
+                android:textSize="12sp"
+                app:strokeColor="#000000"
+                app:strokeWidth="3dp" />
+
+            <Button
+                android:id="@+id/btnE4"
+                android:layout_width="64dp"
+                android:layout_height="48dp"
+                android:backgroundTint="@color/water"
+                android:text="@string/water"
+                android:textSize="12sp"
+                app:strokeColor="#000000"
+                app:strokeWidth="3dp" />
+
+            <Button
+                android:id="@+id/btnE5"
+                android:layout_width="64dp"
+                android:layout_height="48dp"
+                android:backgroundTint="@color/water"
+                android:text="@string/water"
+                android:textSize="12sp"
+                app:strokeColor="#000000"
+                app:strokeWidth="3dp" />
+
+            <Button
+                android:id="@+id/btnE6"
+                android:layout_width="64dp"
+                android:layout_height="48dp"
+                android:backgroundTint="@color/water"
+                android:text="@string/water"
+                android:textSize="12sp"
+                app:strokeColor="#000000"
+                app:strokeWidth="3dp" />
+
+            <Button
+                android:id="@+id/btnE7"
+                android:layout_width="64dp"
+                android:layout_height="48dp"
+                android:backgroundTint="@color/water"
+                android:text="@string/water"
+                android:textSize="12sp"
+                app:strokeColor="#000000"
+                app:strokeWidth="3dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/rowF"
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:text="@string/rowF"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnF1"
+                android:layout_width="64dp"
+                android:layout_height="48dp"
+                android:backgroundTint="@color/water"
+                android:text="@string/water"
+                android:textSize="12sp"
+                app:strokeColor="#000000"
+                app:strokeWidth="3dp" />
+
+            <Button
+                android:id="@+id/btnF2"
+                android:layout_width="64dp"
+                android:layout_height="48dp"
+                android:backgroundTint="@color/water"
+                android:text="@string/water"
+                android:textSize="12sp"
+                app:strokeColor="#000000"
+                app:strokeWidth="3dp" />
+
+            <Button
+                android:id="@+id/btnF3"
+                android:layout_width="64dp"
+                android:layout_height="48dp"
+                android:backgroundTint="@color/water"
+                android:text="@string/water"
+                android:textSize="12sp"
+                app:strokeColor="#000000"
+                app:strokeWidth="3dp" />
+
+            <Button
+                android:id="@+id/btnF4"
+                android:layout_width="64dp"
+                android:layout_height="48dp"
+                android:backgroundTint="@color/water"
+                android:text="@string/water"
+                android:textSize="12sp"
+                app:strokeColor="#000000"
+                app:strokeWidth="3dp" />
+
+            <Button
+                android:id="@+id/btnF5"
+                android:layout_width="64dp"
+                android:layout_height="48dp"
+                android:backgroundTint="@color/water"
+                android:text="@string/water"
+                android:textSize="12sp"
+                app:strokeColor="#000000"
+                app:strokeWidth="3dp" />
+
+            <Button
+                android:id="@+id/btnF6"
+                android:layout_width="64dp"
+                android:layout_height="48dp"
+                android:backgroundTint="@color/water"
+                android:text="@string/water"
+                android:textSize="12sp"
+                app:strokeColor="#000000"
+                app:strokeWidth="3dp" />
+
+            <Button
+                android:id="@+id/btnF7"
+                android:layout_width="64dp"
+                android:layout_height="48dp"
+                android:backgroundTint="@color/water"
+                android:text="@string/water"
+                android:textSize="12sp"
+                app:strokeColor="#000000"
+                app:strokeWidth="3dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/rowG"
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:text="@string/rowG"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnG1"
+                android:layout_width="64dp"
+                android:layout_height="48dp"
+                android:backgroundTint="@color/water"
+                android:text="@string/water"
+                android:textSize="12sp"
+                app:strokeColor="#000000"
+                app:strokeWidth="3dp" />
+
+            <Button
+                android:id="@+id/btnG2"
+                android:layout_width="64dp"
+                android:layout_height="48dp"
+                android:backgroundTint="@color/water"
+                android:text="@string/water"
+                android:textSize="12sp"
+                app:strokeColor="#000000"
+                app:strokeWidth="3dp" />
+
+            <Button
+                android:id="@+id/btnG3"
+                android:layout_width="64dp"
+                android:layout_height="48dp"
+                android:backgroundTint="@color/water"
+                android:text="@string/water"
+                android:textSize="12sp"
+                app:strokeColor="#000000"
+                app:strokeWidth="3dp" />
+
+            <Button
+                android:id="@+id/btnG4"
+                android:layout_width="64dp"
+                android:layout_height="48dp"
+                android:backgroundTint="@color/water"
+                android:text="@string/water"
+                android:textSize="12sp"
+                app:strokeColor="#000000"
+                app:strokeWidth="3dp" />
+
+            <Button
+                android:id="@+id/btnG5"
+                android:layout_width="64dp"
+                android:layout_height="48dp"
+                android:backgroundTint="@color/water"
+                android:text="@string/water"
+                android:textSize="12sp"
+                app:strokeColor="#000000"
+                app:strokeWidth="3dp" />
+
+            <Button
+                android:id="@+id/btnG6"
+                android:layout_width="64dp"
+                android:layout_height="48dp"
+                android:backgroundTint="@color/water"
+                android:text="@string/water"
+                android:textSize="12sp"
+                app:strokeColor="#000000"
+                app:strokeWidth="3dp" />
+
+            <Button
+                android:id="@+id/btnG7"
+                android:layout_width="64dp"
+                android:layout_height="48dp"
+                android:backgroundTint="@color/water"
+                android:text="@string/water"
+                android:textSize="12sp"
+                app:strokeColor="#000000"
+                app:strokeWidth="3dp" />
+
+        </TableRow>
+
+
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="220dp"
+        android:layout_height="300dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/titol"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/titol_Instruccions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/titol_instruccions"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/instruccions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/instruccions"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
