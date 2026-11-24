@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Batalla Naval</string>
+    <string name="titol_instruccions">Instruccions</string>
+    <string name="instruccions">Hi ha 2 vaixells amagats al tauler: un cuirassat (4 caselles) i un destructor (3 caselles). \n Fes clic als botons per intentar enfonsar-los.</string>
+    <string name="water">~</string>
+    <string name="hit">X</string>
+    <string name="miss">•</string>
+    <string name="rowA">A</string>
+    <string name="rowB">B</string>
+    <string name="rowC">C</string>
+    <string name="rowD">D</string>
+    <string name="rowE">E</string>
+    <string name="rowF">F</string>
+    <string name="rowG">G</string>
+    <string name="col1">1</string>
+    <string name="col2">2</string>
+    <string name="col3">3</string>
+    <string name="col4">4</string>
+    <string name="col5">5</string>
+    <string name="col6">6</string>
+    <string name="col7">7</string>
+</resources>
